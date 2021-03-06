@@ -1,29 +1,23 @@
-$(document).ready(function () {
-    $surface = $(".surface")
-    $car = $(".car")
-    $img = $(".car img")
-    let flag = true
-    const cars = ["./assets/Img_06.png", "./assets/Img_05.png"]
+<!DOCTYPE html>
+<html lang="en">
 
-    //key press
-    $(document).on("keypress", function (e) {
-        if (e.which == 13) {
-            $($surface).toggleClass("moveRight")
-            $($car).toggleClass("suspension")
-        }
-    })
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Car</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-    $(document).on("keypress", function (e) {
-        if (e.which == 119) {
-            if (flag == true) {
-                flag = false
-                $img.attr('src', cars[0])
-            }
-            else {
-                flag = true
-                $img.attr('src', cars[1])
-            }
+<body>
+    <div class="night">
+        <div class="surface"></div>
+        <div class="car">
+            <img src="" alt="">
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="magic.js"></script>
+</body>
 
-        }
-    })
-})
+</html>

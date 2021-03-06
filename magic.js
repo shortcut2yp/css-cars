@@ -3,7 +3,7 @@ $(document).ready(function () {
     $car = $(".car")
     $img = $(".car img")
     let flag = true
-    const cars = ["./assets/Img_06.png", "./assets/Img_05.png"]
+    const cars = ["./Img_06.png", "./Img_05.png"]
 
     //key press
     $(document).on("keypress", function (e) {
